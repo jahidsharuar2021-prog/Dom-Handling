@@ -19,13 +19,18 @@
      <button onclick="makered()">Make red</button>
      <button id="btn-make-blue">make blue</button>
      <button id="btn-make-purple">make purple</button>
+     <button id="btn-make-green">Make green</button>
+     <button id="btn-make-gold">make gold</button>
      <script>
-     const btnmakePurple =document.getElementById('btn-make-purple')
-     btnmakePurple .onclick = makepurple;
-     function makepurple (){
-     document.body.style.backgroundColor ='purple';
-     }
+     document.getElementById('btn-make-green').addEventListener('click',
+        function makegreen(){ 
+            document.body.style.backgroundColor ='green'
+        })
 
+        document.getElementById('btn-make-gold').addEventListener('click',
+        function(){
+            document.body.style.backgroundColor='gold'
+        })
      </script>
       <script src="js/event.js"></script>
 </body>
