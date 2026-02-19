@@ -10,7 +10,23 @@
     <button onclick="console.log(7)">click me</button>
     <button onclick="console.log(63)">Another button</button>
     <button onclick="console.log('I am clicked')">Third button</button>
-    <script src="js/event.js"></script>
+   
     <input type="text">
+
+    <!-- option 2 click event handler -->
+     <button onclick="makeyellow()">Make yellow</button>
+     <br>
+     <button onclick="makered()">Make red</button>
+     <button id="btn-make-blue">make blue</button>
+     <button id="btn-make-purple">make purple</button>
+     <script>
+     const btnmakePurple =document.getElementById('btn-make-purple')
+     btnmakePurple .onclick = makepurple;
+     function makepurple (){
+     document.body.style.backgroundColor ='purple';
+     }
+
+     </script>
+      <script src="js/event.js"></script>
 </body>
 </html>
