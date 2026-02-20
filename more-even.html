@@ -1,45 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More events</title>
-</head>
-<body>
+  </head>
+  <body>
     <button id="btn-mouse">micky mouse minnie</button>
-    <input type="text" id="user-name">
-    <input type="text" id="user-email">
+    <input type="text" id="user-name" />
+    <input type="text" id="user-email" />
     <script>
-        // document.getElementById('btn-mouse')
-        // .addEventListener('mouseenter',function(){
-        //     console.log('even triggerd');
-        // })
-        // document.getElementById('btn-mouse')
-        // .addEventListener('mousemove',function(){
-        //     console.log('even triggerd');
-        // })
-        // document.getElementById('btn-mouse')
-        // .addEventListener('mouseout',function(){
-        //     console.log('even triggerd');
-        // })
-        document.getElementById('user-name')
-        .addEventListener('focus',function(){
-            console.log('user about to write');
-        })
-        document.getElementById('user-email')
-        .addEventListener('focus',function(){
-            console.log('user about to write email');
-        })
+      // document.getElementById('btn-mouse')
+      // .addEventListener('mouseenter',function(){
+      //     console.log('even triggerd');
+      // })
+      // document.getElementById('btn-mouse')
+      // .addEventListener('mousemove',function(){
+      //     console.log('even triggerd');
+      // })
+      // document.getElementById('btn-mouse')
+      // .addEventListener('mouseout',function(){
+      //     console.log('even triggerd');
+      // })
+    //   document
+    //     .getElementById("user-name")
+    //     .addEventListener("focus", function () {
+    //       console.log("user about to write");
+    //     });
+    //   document
+    //     .getElementById("user-email")
+    //     .addEventListener("focus", function () {
+    //       console.log("user about to write email");
+    //     });
 
-        // for blur korar jonno meaning when out cursor input field will be done
-        document.getElementById('user-name')
-        .addEventListener('blur',function(){
-            console.log('user about to write is done');
-        })
-        document.getElementById('user-email')
-        .addEventListener('blur',function(){
-            console.log('user about to write email is successful');
-        })
+    //   // for blur korar jonno meaning when out cursor input field will be done
+    //   document
+    //     .getElementById("user-name")
+    //     .addEventListener("blur", function () {
+    //       console.log("user about to write is done");
+    //     });
+    //   document
+    //     .getElementById("user-email")
+    //     .addEventListener("blur", function () {
+    //       console.log("user about to write email is successful");
+    //     });
+    //  document.getElementById('user-name')
+    //  .addEventListener('keydown',function(even){
+    //     console.log('typing',even.target.value)
+    //  })
+     document.getElementById('user-name')
+     .addEventListener('keyup',function(even){
+        console.log('typing',even.target.value)
+     })
     </script>
-</body>
+  </body>
 </html>
